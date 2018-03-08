@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A31F3B26-9EC7-48FA-AC14-81A7ED32F630}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WWWords.My.MyApplication</StartupObject>
+    <RootNamespace>WWWords</RootNamespace>
+    <AssemblyName>BOW</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BOW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BOW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NewIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="kitchanismo, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\kitchanismo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="RandomDisplay, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RandomDisplay.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="blackscreen.Designer.vb">
+      <DependentUpon>blackscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="blackscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWChooseChar.Designer.vb">
+      <DependentUpon>BoWChooseChar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWChooseChar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWHighscore.Designer.vb">
+      <DependentUpon>BoWHighscore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWHighscore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWInstructions.Designer.vb">
+      <DependentUpon>BoWInstructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWInstructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWMain.Designer.vb">
+      <DependentUpon>BoWMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWRegister.Designer.vb">
+      <DependentUpon>BoWRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWStage2.Designer.vb">
+      <DependentUpon>BoWStage2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWStage2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWStage3.Designer.vb">
+      <DependentUpon>BoWStage3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWStage3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseMsgBox.Designer.vb">
+      <DependentUpon>ChooseMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWStage1.Designer.vb">
+      <DependentUpon>BoWStage1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWStage1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWMap.Designer.vb">
+      <DependentUpon>BoWMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoW2Player.Designer.vb">
+      <DependentUpon>BoW2Player.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoW2Player.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoWMinigame1.designer.vb">
+      <DependentUpon>BoWMinigame1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BoWMinigame1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorialMsgBox.Designer.vb">
+      <DependentUpon>TutorialMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpMsgBox.Designer.vb">
+      <DependentUpon>HelpMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriviaMsgBox.Designer.vb">
+      <DependentUpon>TriviaMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TriviaMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mini1MsgBox.Designer.vb">
+      <DependentUpon>Mini1MsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mini1MsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QYesNoMsgBox.Designer.vb">
+      <DependentUpon>QYesNoMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QYesNoMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEMsgBox.Designer.vb">
+      <DependentUpon>SEMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SEMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YesNoMsgBox.Designer.vb">
+      <DependentUpon>YesNoMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YesNoMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMsgBox.Designer.vb">
+      <DependentUpon>CustomMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flat UI%28v.1.0.3%29.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmTransparent.Designer.vb">
+      <DependentUpon>frmTransparent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransparent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modGlobal.vb" />
+    <Compile Include="modsound.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="blackscreen.resx">
+      <DependentUpon>blackscreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWChooseChar.resx">
+      <DependentUpon>BoWChooseChar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWHighscore.resx">
+      <DependentUpon>BoWHighscore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWInstructions.resx">
+      <DependentUpon>BoWInstructions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWMain.resx">
+      <DependentUpon>BoWMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWRegister.resx">
+      <DependentUpon>BoWRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWStage2.resx">
+      <DependentUpon>BoWStage2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWStage3.resx">
+      <DependentUpon>BoWStage3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseMsgBox.resx">
+      <DependentUpon>ChooseMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWStage1.resx">
+      <DependentUpon>BoWStage1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWMap.resx">
+      <DependentUpon>BoWMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoW2Player.resx">
+      <DependentUpon>BoW2Player.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoWMinigame1.resx">
+      <DependentUpon>BoWMinigame1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorialMsgBox.resx">
+      <DependentUpon>TutorialMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpMsgBox.resx">
+      <DependentUpon>HelpMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriviaMsgBox.resx">
+      <DependentUpon>TriviaMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mini1MsgBox.resx">
+      <DependentUpon>Mini1MsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QYesNoMsgBox.resx">
+      <DependentUpon>QYesNoMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEMsgBox.resx">
+      <DependentUpon>SEMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YesNoMsgBox.resx">
+      <DependentUpon>YesNoMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomMsgBox.resx">
+      <DependentUpon>CustomMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransparent.resx">
+      <DependentUpon>frmTransparent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modGlobal.resx">
+      <DependentUpon>modGlobal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WWW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jpn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\china.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firepea.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potato_mine.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blover.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taNK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rattatax.png" />
+    <None Include="Resources\squirtlex.png" />
+    <None Include="Resources\chat1.png" />
+    <None Include="Resources\chat.png" />
+    <None Include="Resources\core.png" />
+    <None Include="Resources\sti-logo.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\italycheck.png" />
+    <None Include="Resources\greececheck.png" />
+    <None Include="Resources\chinacheck.png" />
+    <None Include="Resources\minigame.png" />
+    <None Include="Resources\blacklocation.png" />
+    <None Include="Resources\noflag.png" />
+    <None Include="Resources\italy.png" />
+    <None Include="Resources\greece.png" />
+    <None Include="Resources\chinaflag.png" />
+    <None Include="Resources\background3.png" />
+    <None Include="Resources\background2.jpg" />
+    <None Include="Resources\background1.jpg" />
+    <None Include="Resources\flag.png" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\av2.png" />
+    <None Include="Resources\av1.png" />
+    <None Include="Resources\av3.png" />
+    <None Include="Resources\chanmanderx.png" />
+    <None Include="Resources\female.png" />
+    <None Include="Resources\electrics.png" />
+    <None Include="Resources\fires.png" />
+    <None Include="Resources\psyduck.png" />
+    <None Include="Resources\instinct1.png" />
+    <None Include="Resources\valor1.png" />
+    <None Include="Resources\rattata.png" />
+    <None Include="Resources\mystic.png" />
+    <None Include="Resources\squirtle.png" />
+    <None Include="Resources\bul.png" />
+    <None Include="Resources\male.png" />
+    <None Include="Resources\grasses.png" />
+    <None Include="Resources\electricpng.png" />
+    <None Include="Resources\firepng.png" />
+    <None Include="Resources\grasspng.png" />
+    <None Include="Resources\rocket.png" />
+    <None Include="Resources\bomb.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\idea.png" />
+    <None Include="Resources\ballx.png" />
+    <None Include="Resources\pikachu.png" />
+    <None Include="Resources\chanmander.png" />
+    <None Include="Resources\ball.png" />
+    <None Include="Resources\bulbasor2.png" />
+    <None Include="Resources\bulbasor.png" />
+    <None Include="Resources\pokeball.png" />
+    <None Include="Resources\electric.jpg" />
+    <None Include="Resources\fire1.jpg" />
+    <None Include="Resources\fire.jpg" />
+    <None Include="Resources\grass.jpg" />
+    <None Include="Resources\bgm.mp3" />
+    <None Include="Resources\Cold_War_030_sec_preview.mp3" />
+    <None Include="Resources\btnhs.png" />
+    <None Include="Resources\btnhs1.png" />
+    <None Include="Resources\btnmusic1.png" />
+    <None Include="Resources\btnmusic.png" />
+    <None Include="Resources\how-to-doodle-tank.png" />
+    <None Include="Resources\btnmission.png" />
+    <None Include="Resources\btnmission1.png" />
+    <None Include="Resources\btnexit1.png" />
+    <None Include="Resources\btnexit.png" />
+    <None Include="Resources\btn2player1.png" />
+    <None Include="Resources\btn2player.png" />
+    <None Include="Resources\BUTTON2.png" />
+    <None Include="Resources\BUTTON.png" />
+    <None Include="Resources\BUTTONX.png" />
+    <None Include="Resources\BUTTON1.png" />
+    <None Include="Resources\stage3.png" />
+    <None Include="Resources\BadWords.txt" />
+    <None Include="Resources\WordList.txt" />
+    <None Include="Resources\Buzz.wav" />
+    <None Include="Resources\Marble.wav" />
+    <None Include="Resources\shoot.wav" />
+    <None Include="Resources\warp.WAV" />
+    <None Include="Resources\explosion.wav" />
+    <None Include="Resources\kitchanismo.dll" />
+    <None Include="bin\Debug\kitchanismo.dll" />
+    <None Include="bin\Debug\imgchina\1.png" />
+    <None Include="bin\Debug\imgchina\2.png" />
+    <None Include="bin\Debug\imgchina\3.png" />
+    <None Include="bin\Debug\imgchina\4.png" />
+    <None Include="bin\Debug\imgchina\5.png" />
+    <None Include="bin\Debug\imgchina\6.png" />
+    <Content Include="NewIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

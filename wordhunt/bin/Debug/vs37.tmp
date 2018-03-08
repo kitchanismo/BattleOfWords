@@ -1,0 +1,177 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BOW
+</name>
+</assembly>
+<members>
+<member name="P:WWWords.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WWWords.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:WWWords.My.Resources.Resources.BadWords">
+	<summary>
+  Looks up a localized string similar to anal
+anus
+arse
+ass
+ballsack
+bastard
+bitch
+biatch
+bloody
+blowjob
+blow job
+bollock
+bollok
+boner
+boob
+bugger
+bum
+butt
+buttplug
+clitoris
+cock
+coon
+crap
+cunt
+damn
+dick
+dildo
+dyke
+fag
+feck
+fellate
+fellatio
+felching
+fuck
+f u c k
+fudgepacker
+fudge packer
+flange
+Goddamn
+God damn
+hell
+homo
+jerk
+jizz
+knobend
+knob end
+labia
+lmao
+lmfao
+muff
+nigger
+nigga
+omg
+penis
+piss
+poop
+prick
+pube
+pussy
+queer
+scrotum
+sex
+shit
+s hit
+sh1t
+slut
+smegma
+spunk
+tit
+tosser
+ [rest of string was truncated]";.
+</summary>
+</member><member name="P:WWWords.My.Resources.Resources.WordList">
+	<summary>
+  Looks up a localized string similar to aa
+aah
+aahed
+aahing
+aahs
+aal
+aalii
+aaliis
+aals
+aardvark
+aardvarks
+aardwolf
+aardwolves
+aargh
+aas
+aasvogel
+aasvogels
+aba
+abaca
+abacas
+abaci
+aback
+abacus
+abacuses
+abaft
+abaka
+abakas
+abalone
+abalones
+abamp
+abampere
+abamperes
+abamps
+abandon
+abandoned
+abandoning
+abandonment
+abandonments
+abandons
+abas
+abase
+abased
+abasedly
+abasement
+abasements
+abaser
+abasers
+abases
+abash
+abashed
+abashes
+abashing
+abashment
+abashments
+abasing
+abatable
+abate
+abated
+abatement
+ [rest of string was truncated]";.
+</summary>
+</member><member name="T:WWWords.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:WWWords.Helpers">
+	<summary>
+ Flat UI Theme
+ Creator: iSynthesis (HF)
+ Version: 1.0.3
+ Date Created: 17/06/2013
+ Date Changed: 20/06/2013
+ UID: 374648
+ For any bugs / errors, PM me.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WWWords.FlatAlertBox.W">
+	<summary>
+ How to use: FlatAlertBox.ShowControl(Kind, String, Interval)
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
