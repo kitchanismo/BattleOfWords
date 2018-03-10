@@ -2,6 +2,10 @@
 
 The Battle of Words is mainly designed for the benefits of students of Core Science Academy.
 
+<div align="center">
+  <img src="stage1.png"/>
+</div>
+
 # Game Plot 
 
   The player begins with exploring the ancient world and capture and fight all the BattleMons or Battle Monster. This developed game will train the player to be the very best and become the BattleMon master. There are 2 modes in the game; Adventure and Mini-Games. 
