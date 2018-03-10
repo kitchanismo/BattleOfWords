@@ -54,7 +54,7 @@ Module modGlobal
     Public Sub connected()
         With con
             If .State = ConnectionState.Open Then .Close()
-           .ConnectionString = "Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\savegame\dbscore.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True"
+            .ConnectionString = "Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\savegame\dbscore.mdf;Integrated Security=True;Connect Timeout=30"
             .Open()
         End With
     End Sub

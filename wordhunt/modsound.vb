@@ -114,37 +114,60 @@ Module modsound
     End Sub
     Sub BGMLevel1()
         If togmusic = True Then
-            My.Computer.Audio.Play(startpath & "/bgmusic/bglevel1.wav", AudioPlayMode.BackgroundLoop)
+            Try
+                My.Computer.Audio.Play(startpath & "/bgmusic/bglevel1.wav", AudioPlayMode.BackgroundLoop)
+            Catch
+            End Try
         End If
     End Sub
     Sub BGMLevel2()
         If togmusic = True Then
-            My.Computer.Audio.Play(startpath & "/bgmusic/bglevel2.wav", AudioPlayMode.BackgroundLoop)
+            Try
+                My.Computer.Audio.Play(startpath & "/bgmusic/bglevel2.wav", AudioPlayMode.BackgroundLoop)
+            Catch
+            End Try
         End If
     End Sub
     Sub BGMLevel3()
+
         If togmusic = True Then
-            My.Computer.Audio.Play(startpath & "/bgmusic/bglevel3.wav", AudioPlayMode.BackgroundLoop)
+            Try
+                My.Computer.Audio.Play(startpath & "/bgmusic/bglevel3.wav", AudioPlayMode.BackgroundLoop)
+            Catch
+            End Try
         End If
     End Sub
     Sub BGM2Player()
         If togmusic = True Then
-            My.Computer.Audio.Play(startpath & "/bgmusic/bg2player.wav", AudioPlayMode.BackgroundLoop)
+            Try
+                My.Computer.Audio.Play(startpath & "/bgmusic/bg2player.wav", AudioPlayMode.BackgroundLoop)
+            Catch
+            End Try
         End If
     End Sub
     Public Sub BGStage1()
         If togmusic = True Then
-            My.Computer.Audio.Play(startpath & "/bgmusic/bgstage1.wav", AudioPlayMode.BackgroundLoop)
+            Try
+                My.Computer.Audio.Play(startpath & "/bgmusic/bgstage1.wav", AudioPlayMode.BackgroundLoop)
+            Catch
+            End Try
         End If
     End Sub
     Public Sub BGMusic()
-        If togmusic = True Then
-            My.Computer.Audio.Play(startpath & "/bgmusic/bgmenu.wav", AudioPlayMode.BackgroundLoop)
-        Else
-            My.Computer.Audio.Stop()
-        End If
+        Try
+            If togmusic = True Then
+
+                My.Computer.Audio.Play(startpath & "/bgmusic/bgmenu.wav", AudioPlayMode.BackgroundLoop)
+            Else
+                My.Computer.Audio.Stop()
+            End If
+        Catch
+        End Try
     End Sub
     Sub BGMStop()
-        My.Computer.Audio.Stop()
+        Try
+            My.Computer.Audio.Stop()
+        Catch
+        End Try
     End Sub
 End Module
